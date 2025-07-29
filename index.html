@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>WDYM - Department of Clarification</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      background-color: #fefefe;
+      font-family: 'Times New Roman', serif;
+      padding: 3rem;
+      max-width: 750px;
+      margin: auto;
+      color: #222;
+    }
+    h1 {
+      font-size: 3.5rem;
+      text-align: center;
+      margin-bottom: 0.2rem;
+      transition: transform 0.2s ease;
+    }
+    h1:hover {
+      transform: rotate(1deg) scale(1.1);
+      color: crimson;
+      cursor: help;
+    }
+    h2 {
+      font-size: 1.25rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #555;
+      font-style: italic;
+    }
+    blockquote {
+      background: #f5f5f5;
+      padding: 1rem;
+      border-left: 5px solid #c99;
+      margin-bottom: 2rem;
+      font-style: italic;
+    }
+    .explanation {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    #definition {
+      background-color: #eef;
+      border: 1px solid #88c;
+      padding: 1rem;
+      margin: 2rem 0;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    .button {
+      padding: 0.6rem 1.2rem;
+      font-size: 1rem;
+      background: #bada55;
+      color: black;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-bottom: 2rem;
+    }
+    .formbox {
+      background: #eee;
+      padding: 1.5rem;
+      border: 2px dashed #aaa;
+      margin-top: 2rem;
+    }
+    .formbox input {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+    }
+    .footer {
+      margin-top: 4rem;
+      font-size: 0.85rem;
+      text-align: center;
+      color: #888;
+    }
+    a {
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
+  <h1>WDYM</h1>
+  <h2>What Do You Mean? A Government Clarification Portal</h2>
+
+  <blockquote>
+    @SillyroDragon Of The Imgurs you have an unhealthy obsession with dotgov.biz addresses... But I wish you well. <br />
+    — <strong>@Pretzel, Keeper of Springs</strong>
+  </blockquote>
+
+  <div class="explanation">
+    <p>
+      Welcome to <strong>WDYM.dotgov.biz</strong>, the official digital arm of the <em>Federal Department of Clarification and Mild Concern</em>.
+    </p>
+    <p>
+      When a citizen expresses confusion with “WDYM,” we respond with swift and increasingly irrelevant clarification.
+    </p>
+    <p>
+      Our team of interns is trained in interpretive sarcasm, passive-aggressive helpdesk management, and ancient memeology.
+    </p>
+  </div>
+
+  <div id="definition">Loading certified definition...</div>
+  <button class="button" onclick="generateDefinition()">Get Clarified Again</button>
+
+  <script>
+    const definitions = [
+      "WDYM: Weaponized Discourse Yield Management.",
+      "WDYM: Weekly Disappointment Yield Metric.",
+      "WDYM: What Ducks Yell Mechanically.",
+      "WDYM: We Demand Yelling, Mortals.",
+      "WDYM: Witnessed Dudes Yelling Midair.",
+      "WDYM: Woefully Disorganized Yeti Ministry.",
+      "WDYM: Withdrawing Data Yearly, Maybe.",
+      "WDYM: Why Do You Moan? 🤨",
+      "WDYM: Wonderfully Dense Yellow Milk.",
+      "WDYM: Warning: Dildos Yield Mass.",
+      "WDYM: What Does Yoda Mean?",
+      "WDYM: Wait, Did You Message?",
+      "WDYM: Words Don't Yield Meaning. Accept chaos."
+    ];
+
+    function generateDefinition() {
+      const def = definitions[Math.floor(Math.random() * definitions.length)];
+      document.getElementById("definition").innerText = def;
+    }
+
+    window.onload = generateDefinition;
+  </script>
+
+  <div class="formbox">
+    <h3>Request Clarification</h3>
+    <p>Submit your confusing statement. Our response team will review it by 2032.</p>
+    <input type="text" placeholder="e.g. 'Is cereal soup?'" />
+  </div>
+
+  <div class="footer">
+    <p>© 2025 WDYM.dotgov.biz — A subsidiary of dotgov.biz & affiliated nonsense.</p>
+    <p><a href="https://dotgov.biz">↩ Back to dotgov.biz HQ</a></p>
+  </div>
+</body>
+</html>
